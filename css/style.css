@@ -92,8 +92,20 @@ a {
     margin-bottom: 20px;
 }
 
+.margin-b-big {
+    margin-bottom: 60px;
+}
+
+.margin-t-small {
+    margin-top: 20px;
+}
+
 .margin-small {
     margin: 10px;
+}
+
+.padd-top{
+    padding-top: 90px;
 }
 
 
@@ -156,8 +168,9 @@ header {
 /* SECTION CARD */
 
 .container {
-    margin: 0px 20px;
-    padding-top: 53px;
+    width: 80%;
+    margin: 0 auto;
+    
 }
 
 .cards {
@@ -190,33 +203,92 @@ header {
 
 
 
-.card .description h1,
-.card-ill .description h1 {
+.cards .card .description h1,
+.cards .card-ill .description h1 {
     color: var(--h-color);
 }
 
-.card p,
-.card-ill p {
+.cards .card p,
+.cards .card-ill p {
     margin: 20px 0px;
     line-height: 2rem;
 }
 
-.card .description a,
-.card-ill .description a {
+.cards .card .description a,
+.cards .card-ill .description a {
     margin-bottom: 20px;
     display: inline-block;
 }
 
-.card-ill .illustration img {
+.cards .card-ill .illustration img {
     width: 100%;
     display: block;
 
 }
 
-.card .icon {
+.cards .card .icon {
     color: var(--h-color);
     font-size: 4rem;
 }
+
+
+
+
+
+
+/* Secrion strategic planning */
+
+.strategic-planning{
+    background-color: var(--bg-section);
+}
+
+.strategic-planning .container .box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box .image-content img{
+    margin-bottom: 60px;
+}
+
+.box .image-content p{
+    line-height: 1.7rem;
+
+}
+
+.box .card{
+    background-color: var(--st-txt-color);
+    border-radius: 55px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.box .card p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+
+.box .card .down-button{
+    background-color: var(--bg-section);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 20px auto;
+}
+
+.down-button span{
+    font-size: 1.2rem;
+    line-height: 50px;
+}
+
 
 
 
@@ -232,6 +304,12 @@ header {
 /* Tablet */
 
 @media all and (min-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* section card */
 
     .cards {
         display: flex;
@@ -268,6 +346,15 @@ header {
         width: 60%;
     }
 
+    /* strategic planning */
+
+    .box .card{
+        width: 100%;
+    }
+
+
+
+
 
 }
 
@@ -287,6 +374,13 @@ header {
 /* Desktop */
 
 @media all and (min-width: 992px) {
+
+    .container{
+        width: 80%;
+        max-width: 950px;
+    }
+
+    /* header */
     .menu .extended {
         display: block;
     }
@@ -294,6 +388,8 @@ header {
     .menu .compressed {
         display: none;
     }
+
+    /* Section card */
 
     .cards .card-ill {
         flex-wrap: wrap;
@@ -324,9 +420,51 @@ header {
 
     .card p,
     .card-ill p {
-        /* margin: 20px 0px; */
         line-height: 1.5rem;
     }
+
+    /* Section strategic planning */
+
+    .strategic-planning .container .box{
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .strategic-planning .container .box .card,
+    .strategic-planning .container .box .image-content{
+        margin: 0px 20px;
+        width: 50%;
+    }
+
+     .strategic-planning .container .box {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .strategic-planning .container .box .card{
+        align-self: flex-end;
+        margin-top: 80px;
+    }
+
+    .strategic-planning .container .box .image-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .strategic-planning .container .box .image-content .box-txt{
+        align-self: flex-end;
+    }
+
+    
+
+
+
+
+
+
+
+    
 
 
 
