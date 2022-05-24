@@ -192,6 +192,10 @@ a {
     padding: 60px 0px;
 }
 
+.padd-tb-s{
+    padding: 40px 0px;
+}
+
 .padd-top{
     padding-top: 90px;
 }
@@ -277,6 +281,13 @@ header {
     background-color: var(--bg-card);
     border-radius: 15px;
     margin-bottom: 30px;
+    
+}
+
+.cards .card:hover,
+.cards .card-ill:hover {
+    animation: 1s ease-in-out;
+    transform: scale(1.05);
 }
 
 .cards .card {
@@ -326,7 +337,7 @@ header {
 
 
 
-/* Secrion strategic planning */
+/* Section strategic planning */
 
 .strategic-planning{
     background-color: var(--bg-section);
@@ -357,6 +368,11 @@ header {
     padding: 20px;
     margin-top: 30px;
     text-align: center;
+}
+
+.box .card:hover{
+    animation: 1s ease-in-out;
+    transform: translate(0px, 20px );
 }
 
 
